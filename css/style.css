@@ -57,12 +57,12 @@ a, a:hover {
     align-items: center;
 }
 
-.DSMovieINI-contact-container {
+.DSMovieINI-contact-container img {
     margin-right: 10px;
 }
 
 #DSMovieINI-card-list {
-    padding: 40px 10px;
+    padding: 0px 10px;
 }
 
 .DSMovieINI-card {
@@ -79,7 +79,7 @@ a, a:hover {
 
 .DSMovieINI-card-description {
     background-color: var(--white);
-    padding: 10px 20px 20px 20px; /* padding: 10px 0 20px 0; */
+    padding: 10px 20px 20px 20; /* padding: 10px 0 20px 0; */
     display: flex ;
     flex-direction: column;
     align-items: center;
@@ -161,7 +161,7 @@ a, a:hover {
     margin-bottom: 20px;
 }
 
-.DSMovieINI-form-group {
+.DSMovieINI-form-group label {
     font-size: 12px;
     color: var(--text-ligth-gray);
 }
@@ -172,4 +172,51 @@ a, a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.DSMovieINI-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.DSMovieINI-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DSMovieINI-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.DSMovieINI-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DSMovieINI-pagination-box button:disable {
+    border: 1px solid var(--text-ligth-gray);
+}
+
+.DSMovieINI-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(77%) saturate(1991%) hue-rotate(234deg) brightness(92%)
+}
+
+.DSMovieINI-pagination-box button:disable img {
+    filter: unset;
+}
+
+.DSMovie-flip-horizontal {
+    transform: rotate(180deg);
 }
