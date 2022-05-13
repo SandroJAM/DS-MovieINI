@@ -5,7 +5,9 @@
     --text-gray: #4a4a4a;
     --color-primary: #4D41C0;
     --white: #FFFFFF;
-    --text-ligth-gray: #aaaaaa
+    --text-ligth-gray: #aaaaaa;
+    --star-yellow: #FFBB3A;
+    /* Não criou a FONT #989898 */
 }
 
 *{
@@ -83,7 +85,7 @@ a, a:hover {
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 220px; /* min-height: 150px; */
 }
 
 .DSMovieINI-card-description h3 {
@@ -124,8 +126,33 @@ a, a:hover {
 .DSMovieINI-form-description h3 {
     font-size: 13px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    text-align: center;
 }
+
+.DSMovieINI-card-description-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DSMovieINI-card-description-bottom h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--star-yellow);
+}
+
+.DSMovieINI-card-description-bottom img {
+    width: 22px;
+}
+
+.DSMovieINI-card-description-bottom p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-ligth-gray); /* Não criou a FONT #989898 */
+    margin-bottom: 10px;
+}
+
 
 .DSMovieINI-form {
     width: 100%;
